@@ -174,7 +174,8 @@
 .digital {
     background-image: url(../images/bg.jpg);
     background-repeat: no-repeat;
-    background-position: bottom center;
+    background-position: center;
+    background-size: cover;
     color: #f3f3f8;
     text-align: center;
     padding-top: 170px;
@@ -280,8 +281,6 @@
         background-position: center right 20px;
         background-size: auto;
     }
-    &__form-option {
-    }
     &__form-btn {
         outline: transparent;
         width: 223px;
@@ -298,3 +297,41 @@
         }
     }
 }
+
+// ==================== features ====================
+
+.features {
+    padding-top: 186px;
+    padding-bottom: 121px;
+    &__items {
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+    }
+    &__item {
+        max-width: 361px;
+        padding: 41px 30px 49px;
+        &:hover {
+            box-shadow: 0 2px 50px rgba(0, 0, 0, 0.08);
+            border-radius: 4px;
+        }
+    }
+    &__img {
+        width: 112px;
+        height: 140px;
+        padding-bottom: 25px;
+    }
+    &__title {
+        color: #000000;
+        font-size: 24px;
+        font-weight: 400;
+        padding-bottom: 20px;
+    }
+    &__text {
+        font-size: 16px;
+        font-weight: 400;
+    }
+}
+
+// ==================== features ====================
+
