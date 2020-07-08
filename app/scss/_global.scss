@@ -34,3 +34,28 @@ body {
     margin: 0 auto;
     padding: 0px 15px;
 }
+.title {
+    color: #000;
+    font-size: 30px;
+    font-weight: 400;
+    box-shadow: 0 2px 4px rgba(108, 111, 115, 0.1);
+    border-radius: 4px;
+    background-color: #ffffff;
+    padding: 39px 0px 41px 30px;
+}
+
+.btn {
+    color: #f3f3f8;
+    border-radius: 28px;
+    border: 1px solid #f3f3f8;
+    transition: all 0.3s;
+    &:hover {
+        background-color: #f3f3f8;
+        color: $blue;
+    }
+}
+
+.btn--active {
+    background-color: #f3f3f8;
+    color: $blue;
+}

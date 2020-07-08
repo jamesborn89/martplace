@@ -172,7 +172,8 @@
 // ==================== digital ====================
 
 .digital {
-    background-image: url(../images/bg.jpg);
+    background-image: url(../images/gradient-bg.png);
+    background-color: #2b2b2b;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -201,20 +202,7 @@
     }
     &__btn {
         margin: 0 15px;
-        color: #f3f3f8;
         padding: 11px 30px;
-        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-        border-radius: 28px;
-        border: 1px solid #f3f3f8;
-        transition: all 0.3s;
-        &:hover {
-            background-color: #f3f3f8;
-            color: $blue;
-        }
-    }
-    &__btn--active {
-        background-color: #f3f3f8;
-        color: $blue;
     }
 }
 
@@ -250,7 +238,6 @@
         &::after {
             position: absolute;
             content: "";
-            align-items: center;
             top: -26px;
             right: 30px;
             height: 50px;
@@ -302,7 +289,7 @@
 
 .features {
     padding-top: 186px;
-    padding-bottom: 121px;
+    padding-bottom: 115px;
     &__items {
         display: flex;
         justify-content: space-between;
@@ -335,3 +322,170 @@
 
 // ==================== features ====================
 
+.weekly {
+    background-color: $gray;
+    padding: 120px 0;
+    &__title {
+        margin-bottom: 50px;
+    }
+    &__slaider {
+        border-radius: 4px;
+    }
+    &__slaider-img {
+        position: relative;
+    }
+    &__slaider-item {
+        display: flex !important;
+    }
+    &__img {
+        border-radius: 4px 0 0 4px;
+        max-width: 555px;
+        min-height: 450px;
+        display: block;
+    }
+    &__hover {
+        opacity: 0;
+        background-image: url(../images/slaider/bg-hover.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        position: absolute;
+        top: 0;
+        padding-top: 203px;
+        vertical-align: middle;
+        text-align: center;
+        width: 100%;
+        height: 100%;
+        transition: all 0.5s;
+        &:hover {
+            opacity: 1;
+        }
+    }
+    &__btn {
+        padding: 0px 31px;
+        margin: 0px 5px;
+    }
+    &__info {
+        border-radius: 0 4px 4px 0;
+        background-color: #ffffff;
+        padding: 45px 50px 0px;
+    }
+    &__info-title {
+        color: #000000;
+        font-size: 24px;
+        font-weight: 700;
+        margin-bottom: 15px;
+    }
+    &__link {
+        display: flex;
+        margin-bottom: 25px;
+    }
+    &__user {
+        display: flex;
+    }
+    &__user-img {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        margin-right: 9px;
+    }
+    &__user-name {
+        margin-right: 20px;
+        color: #000;
+        font-size: 15px;
+    }
+    &__product {
+        display: flex;
+    }
+    &__product-img {
+        margin-right: 9px;
+    }
+    &__product-name {
+        color: #7347c1;
+        font-size: 15px;
+    }
+    &__text {
+        margin-bottom: 30px;
+    }
+    &__tags {
+        margin-bottom: 44px;
+    }
+    &__tag {
+        padding: 0px 15px;
+        margin-left: 5px;
+        line-height: 28px;
+        color: #868c96;
+        font-size: 15px;
+        border-radius: 14px;
+        background-color: #f1f3f6;
+        transition: all 0.3s;
+        &:hover{
+            background-color: #adadad;
+            color: #fff;
+        }
+    }
+    &__footer {
+        display: flex;
+        align-items: center;
+        padding-top: 23px;
+        border-top: 1px solid #ececec;
+        font-size: 15px;
+    }
+    &__footer-price {
+        border-radius: 16px;
+        background-color: $blue;
+        padding: 0 19px;
+        margin-right: 19px;
+        color: #fff;
+        font-weight: 500;
+    }
+    &__footer-follower {
+        color: #555;
+        margin-right: 15px;
+    }
+    &__footer-basket {
+        color: $blue;
+    }
+}
+.slick-arrow {
+    position: absolute;
+    right: 0;
+    top: -125px;
+    height: 45px;
+    border: none;
+    background-color: #7347c1;
+    margin-right: 30px;
+    outline: none;
+}
+.slick-prev,
+.slick-next {
+    width: 55px;
+    &:active {
+        transform: translateY(1px);
+    }
+
+}
+
+.slick-prev {
+    right: 55px;
+    border-radius: 23px 0 0 23px;
+}
+.slick-next {
+    border-radius: 0 23px 23px 0;
+}
+
+.jq-ry-container > .jq-ry-group-wrapper > .jq-ry-group > svg {
+    margin: 3px;
+    background-color: transparent;
+}
+
+.lnr {
+    margin-right: 5px;
+}
+.weekly__footer-follower .lnr-heart {
+    font-weight: 700;
+    color: #7347c1;
+}
+.rate-star {
+    margin-left: auto;
+}
