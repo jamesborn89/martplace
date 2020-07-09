@@ -328,14 +328,11 @@
     &__title {
         margin-bottom: 50px;
     }
-    &__slaider {
+    &__slider {
         border-radius: 4px;
     }
-    &__slaider-img {
+    &__slider-img {
         position: relative;
-    }
-    &__slaider-item {
-        display: flex !important;
     }
     &__img {
         border-radius: 4px 0 0 4px;
@@ -410,20 +407,6 @@
     &__tags {
         margin-bottom: 44px;
     }
-    &__tag {
-        padding: 0px 15px;
-        margin-left: 5px;
-        line-height: 28px;
-        color: #868c96;
-        font-size: 15px;
-        border-radius: 14px;
-        background-color: #f1f3f6;
-        transition: all 0.3s;
-        &:hover{
-            background-color: #adadad;
-            color: #fff;
-        }
-    }
     &__footer {
         display: flex;
         align-items: center;
@@ -447,6 +430,15 @@
         color: $blue;
     }
 }
+
+.weekly__slider .weekly__slider-item {
+    display: flex !important;
+    &:hover {
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+        border-radius: 4px;
+    }
+}
+
 .slick-arrow {
     position: absolute;
     right: 0;
@@ -463,7 +455,6 @@
     &:active {
         transform: translateY(1px);
     }
-
 }
 
 .slick-prev {
@@ -479,13 +470,158 @@
     background-color: transparent;
 }
 
-.lnr {
-    margin-right: 5px;
-}
 .weekly__footer-follower .lnr-heart {
     font-weight: 700;
     color: #7347c1;
 }
 .rate-star {
     margin-left: auto;
+}
+
+// ==================== products ====================
+
+.products {
+    background-color: #f6f7fb;
+    padding: 120px 0;
+    &__header {
+        margin-bottom: 30px;
+        display: flex;
+    }
+    &__filter {
+        color: #747b86;
+        font-size: 16px;
+        margin-left: auto;
+    }
+    &__filter-dots {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 10px;
+        height: 20px;
+        margin: auto 25px;
+        cursor: pointer;
+        
+        &:hover > .products__filter-inner{
+            display: block;
+        }
+    }
+    &__filter-inner {
+        display: none;
+        position: absolute;
+        top: 42px;
+        right: -16px;
+        padding: 27px 28px;
+        min-width: 183px;
+        background-color: #fff;
+        color: #747b86;
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 28px;
+        box-shadow: 0 5px 40px rgba(82, 85, 90, 0.2);
+        border-radius: 3px;
+        line-height: 25px;
+        &::after {
+            content: "";
+            position: absolute;
+            top: -25px;
+            right: 11px;
+            border: 12px solid transparent;
+            border-bottom: 19px solid #fff;
+        }
+    }
+    &__filter-btn {
+        background-color: #fff;
+        border: none;
+        color: #747b86;
+        outline: none;
+        cursor: pointer;
+        &:hover,
+        &:focus {
+            color: #0674ec;
+        }
+    }
+    &__inner {
+        height: 92px;
+        margin-bottom: 50px;
+        padding: 30px;
+    }
+    &__btn {
+        border: none;
+        font-size: 15px;
+        line-height: 32px;
+        padding: 0 17px;
+    }
+    &__items {
+        display: inline-flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 100%;
+    }
+    &__all-btn {
+        display: block;
+        margin: 0 auto;
+        padding: 14px 33px;
+    }
+}
+.products .weekly {
+    &__slider-item {
+        max-width: 361px;
+        flex-direction: column;
+        margin-bottom: 30px;
+    }
+    &__img {
+        max-width: 361px;
+        min-height: 230px;
+        border-radius: 4px 4px 0 0;
+    }
+    &__hover {
+        background-size: cover;
+        padding-top: 93px;
+    }
+    &__info {
+        padding: 0;
+        border-radius: 0 0 4px 4px;
+    }
+    &__info-title {
+        font-size: 20px;
+        padding: 25px 30px 0px;
+        margin-bottom: 10px;
+    }
+    &__link {
+        padding: 0px 30px;
+        margin-bottom: 25px;
+    }
+    &__user-img {
+        margin-right: 8px;
+    }
+    &__product-img {
+        margin: auto;
+        width: 15px;
+        height: 17px;
+        margin-right: 7px;
+    }
+    &__text {
+        padding: 0px 30px;
+        margin-bottom: 30px;
+    }
+    &__footer {
+        padding: 12px 30px;
+    }
+    &__footer-price {
+        margin-right: 10px;
+        color: $blue;
+        background-color: $gray;
+    }
+    &__footer-basket {
+        margin-left: auto;
+    }
+}
+.products__btn.tag:focus {
+    outline: none;
+    background-color: $blue;
+    color: #fff;
+}
+.products .rate-star {
+    margin-left: 0;
 }

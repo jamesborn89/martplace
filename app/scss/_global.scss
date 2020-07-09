@@ -22,7 +22,7 @@ li {
 }
 
 body {
-    font-family: 'Quicksand', sans-serif;
+    font-family: "Quicksand", sans-serif;
     font-weight: 400;
     font-size: 16px;
     line-height: 30px;
@@ -44,11 +44,27 @@ body {
     padding: 39px 0px 41px 30px;
 }
 
+.tag {
+    padding: 0px 15px;
+    margin-left: 5px;
+    line-height: 28px;
+    color: #868c96;
+    font-size: 15px;
+    border-radius: 14px;
+    background-color: #f1f3f6;
+    transition: all 0.3s;
+    &:hover {
+        background-color: $blue;
+        color: #fff;
+    }
+}
+
 .btn {
     color: #f3f3f8;
     border-radius: 28px;
     border: 1px solid #f3f3f8;
     transition: all 0.3s;
+    background-color: $blue;
     &:hover {
         background-color: #f3f3f8;
         color: $blue;
@@ -58,4 +74,13 @@ body {
 .btn--active {
     background-color: #f3f3f8;
     color: $blue;
+}
+
+.dots{
+    display: block;
+    width: 4px;
+    height: 4px;
+    background-color: #a3b1c4;
+    color: #000;
+    border-radius: 50%;
 }
