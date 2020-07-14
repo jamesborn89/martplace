@@ -1,32 +1,214 @@
-
 @font-face {
-    font-family: 'Quicksand';
-    src: url('../fonts/Quicksand-Light.woff2') format('woff2'),
-         url('../fonts/Quicksand-Light.woff') format('woff');
-    font-weight: 300;
-    font-display: swap;
+  font-family: "Quicksand";
+  src: url("../fonts/Quicksand-Light.woff2") format("woff2"), url("../fonts/Quicksand-Light.woff") format("woff");
+  font-weight: 300;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: 'Quicksand';
-    src: url('../fonts/Quicksand-Regular.woff2') format('woff2'),
-         url('../fonts/Quicksand-Regular.woff') format('woff');
-    font-weight: 400;
-    font-display: swap;
+  font-family: "Quicksand";
+  src: url("../fonts/Quicksand-Regular.woff2") format("woff2"), url("../fonts/Quicksand-Regular.woff") format("woff");
+  font-weight: 400;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: 'Quicksand';
-    src: url('../fonts/Quicksand-Medium.woff2') format('woff2'),
-         url('../fonts/Quicksand-Medium.woff') format('woff');
-    font-weight: 500;
-    font-display: swap;
+  font-family: "Quicksand";
+  src: url("../fonts/Quicksand-Medium.woff2") format("woff2"), url("../fonts/Quicksand-Medium.woff") format("woff");
+  font-weight: 500;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: 'Quicksand';
-    src: url('../fonts/Quicksand-Bold.woff2') format('woff2'),
-         url('../fonts/Quicksand-Bold.woff') format('woff');
-    font-weight: 700;
-    font-display: swap;
+  font-family: "Quicksand";
+  src: url("../fonts/Quicksand-Bold.woff2") format("woff2"), url("../fonts/Quicksand-Bold.woff") format("woff");
+  font-weight: 700;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "icomoon";
+  src: url("../fonts/icomoon.eot?wfgyb6");
+  src: url("../fonts/icomoon.eot?wfgyb6#iefix") format("embedded-opentype"),
+    url("../fonts/icomoon.ttf?wfgyb6") format("truetype"), url("../fonts/icomoon.woff?wfgyb6") format("woff"),
+    url("../fonts/icomoon.svg?wfgyb6#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "icomoon" !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-check:before {
+  content: "\f00c";
+}
+
+.icon-check-circle:before {
+  content: "\f058";
+}
+
+.icon-twitter:before {
+  content: "\f099";
+}
+
+.icon-facebook:before {
+  content: "\f09a";
+}
+
+.icon-facebook-f:before {
+  content: "\f09a";
+}
+
+.icon-pinterest:before {
+  content: "\f0d2";
+}
+
+.icon-linkedin:before {
+  content: "\f0e1";
+}
+
+.icon-dribbble:before {
+  content: "\f17d";
+}
+
+.icon-google:before {
+  content: "\f1a0";
+}
+
+.icon-alarm:before {
+  content: "\e901";
+}
+
+.icon-book:before {
+  content: "\e902";
+}
+
+.icon-briefcase:before {
+  content: "\e903";
+}
+
+.icon-bubble:before {
+  content: "\e904";
+}
+
+.icon-cart:before {
+  content: "\e900";
+}
+
+.icon-chart-bars:before {
+  content: "\e905";
+}
+
+.icon-chevron-down:before {
+  content: "\e906";
+}
+
+.icon-chevron-left:before {
+  content: "\e907";
+}
+
+.icon-chevron-right:before {
+  content: "\e908";
+}
+
+.icon-clock:before {
+  content: "\e909";
+}
+
+.icon-cloud-download:before {
+  content: "\e90a";
+}
+
+.icon-cog:before {
+  content: "\e90b";
+}
+
+.icon-dice:before {
+  content: "\e90c";
+}
+
+.icon-download:before {
+  content: "\e90d";
+}
+
+.icon-envelope:before {
+  content: "\e90e";
+}
+
+.icon-exit:before {
+  content: "\e90f";
+}
+
+.icon-eye:before {
+  content: "\e910";
+}
+
+.icon-heart:before {
+  content: "\e911";
+}
+
+.icon-home:before {
+  content: "\e912";
+}
+
+.icon-inbox:before {
+  content: "\e913";
+}
+
+.icon-leaf:before {
+  content: "\e914";
+}
+
+.icon-license:before {
+  content: "\e915";
+}
+
+.icon-magic-wand:before {
+  content: "\e916";
+}
+
+.icon-magnifier:before {
+  content: "\e917";
+}
+
+.icon-map-marker:before {
+  content: "\e918";
+}
+
+.icon-phone:before {
+  content: "\e919";
+}
+
+.icon-phone-handset:before {
+  content: "\e91a";
+}
+
+.icon-question-circle:before {
+  content: "\e91b";
+}
+
+.icon-smile:before {
+  content: "\e91c";
+}
+
+.icon-user:before {
+  content: "\e91d";
+}
+
+.icon-users:before {
+  content: "\e91e";
 }
