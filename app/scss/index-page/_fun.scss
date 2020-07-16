@@ -1,0 +1,55 @@
+.fun {
+    background-color: #0d0f13;
+    padding: 96px 0 90px;
+
+    &__items {
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+    }
+
+    &__item {
+        font-size: 18px;
+        font-weight: 400;
+
+        &--yellow {
+            color: #feb71d;
+        }
+
+        &--blue {
+            color: #58c9e9;
+        }
+
+        &--green {
+            color: #77de51;
+        }
+
+        &--red {
+            color: #ff6a6d;
+        }
+    }
+
+    &__icon {
+        font-size: 48px;
+        margin-bottom: 45px;
+    }
+
+    &__number {
+        font-size: 36px;
+        margin-bottom: 11px;
+    }
+
+    &__text {
+        color: #ffffff;
+    }
+}
+
+.container {}
+
+.icon-briefcase {}
+
+.icon-cloud-download {}
+
+.icon-smile {}
+
+.icon-users {}
