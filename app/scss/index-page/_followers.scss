@@ -2,15 +2,15 @@
     .container {
         overflow: hidden;
     }
-    padding: 120px 0;
+    padding: 119px 0;
     background-color: #eff1f5;
 
     &__header {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 40px 30px;
-        margin-bottom: 51px;
+        padding: 32px 30px;
+        margin-bottom: 50px;
     }
 
     &__slider {
