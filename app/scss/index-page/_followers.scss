@@ -1,0 +1,30 @@
+.followers {
+    .container {
+        overflow: hidden;
+    }
+    padding: 120px 0;
+    background-color: #eff1f5;
+
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 40px 30px;
+        margin-bottom: 51px;
+    }
+
+    &__slider {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .slick-list {
+        margin-right: -25px;
+    }
+
+    .card-product {
+        &__inner {
+            margin-bottom: 0;
+        }
+    }
+}

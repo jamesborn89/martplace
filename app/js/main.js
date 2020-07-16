@@ -3,7 +3,17 @@ $(function () {
   $('.weekly__slider').slick({
     prevArrow: '<button class="slick-arrow slick-arrow--prev" type="button"><span class="icon-chevron-left"></button>',
     nextArrow: '<button class="slick-arrow slick-arrow--next" type="button"><span class="icon-chevron-right"></button>',
-    appendArrows: '.arrows-wrap'
+    appendArrows: '.arrows-wrap',
+
+  });
+
+  $('.followers__slider').slick({
+    infinite: true,
+    slidesToShow: 3,
+    slidesToScroll: 3,
+    prevArrow: '<button class="slick-arrow slick-arrow--prev" type="button"><span class="icon-chevron-left"></button>',
+    nextArrow: '<button class="slick-arrow slick-arrow--next" type="button"><span class="icon-chevron-right"></button>',
+    appendArrows: '.arrows-followers',
 
   });
 
