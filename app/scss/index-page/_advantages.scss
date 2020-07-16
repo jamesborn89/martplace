@@ -1,0 +1,92 @@
+.advantages {
+    padding: 120px 0;
+    text-align: center;
+
+    &__title {
+        color: #000000;
+        font-size: 36px;
+        font-weight: 400;
+        line-height: 28px;
+        margin-bottom: 27px;
+
+        &-blue {
+            color: $blue;
+        }
+    }
+
+    &__text {
+        max-width: 721px;
+        margin: 0 auto;
+        margin-bottom: 55px;
+    }
+
+    &__list {
+        counter-reset: section;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    &__item {
+        list-style: none;
+        padding: 50px 30px 52px;
+        margin-bottom: 30px;
+        width: 361px;
+        box-shadow: 0 2px 25px rgba(0, 0, 0, 0.08);
+        border-radius: 4px;
+        position: relative;
+        &::before {
+            position: absolute;
+            counter-increment: section;
+            content: "0" counter(section);
+            left: 18px;
+            top: 21px;
+            color: #5c87f8;
+            font-size: 48px;
+            font-weight: 300;
+            opacity: 0.2;
+        }
+    }
+
+    &__item-icon {
+        font-size: 60px;
+        font-weight: 400;
+        margin-bottom: 40px;
+
+        &--blue {
+            color: $blue;
+        }
+
+        &--purpule {
+            color: #7f4ec2;
+        }
+
+        &--green {
+            color: #77de51;
+        }
+
+        &--orange {
+            color: #feb71d;
+        }
+
+        &--light-blue {
+            color: #58c9e9;
+        }
+
+        &--red {
+            color: #ff6a6d;
+        }
+    }
+
+    &__item-title {
+        color: #000000;
+        font-size: 24px;
+        font-weight: 400;
+        margin-bottom: 19px;
+    }
+
+    &__item-text {
+    }
+}

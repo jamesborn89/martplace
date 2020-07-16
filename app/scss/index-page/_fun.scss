@@ -1,6 +1,6 @@
 .fun {
     background-color: #0d0f13;
-    padding: 96px 0 90px;
+    padding: 96px 0 92px;
 
     &__items {
         display: flex;
@@ -11,22 +11,6 @@
     &__item {
         font-size: 18px;
         font-weight: 400;
-
-        &--yellow {
-            color: #feb71d;
-        }
-
-        &--blue {
-            color: #58c9e9;
-        }
-
-        &--green {
-            color: #77de51;
-        }
-
-        &--red {
-            color: #ff6a6d;
-        }
     }
 
     &__icon {
@@ -43,13 +27,3 @@
         color: #ffffff;
     }
 }
-
-.container {}
-
-.icon-briefcase {}
-
-.icon-cloud-download {}
-
-.icon-smile {}
-
-.icon-users {}
