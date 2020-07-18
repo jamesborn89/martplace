@@ -198,12 +198,15 @@ body {
     }
 
     &__footer-follower,
-    &__footer-basket {
+    &__footer-basket,
+    &__footer-eye,
+    &__footer-data,
+    &__footer-bubble {
         background-color: transparent;
         border: none;
         position: relative;
         cursor: pointer;
-
+        outline: transparent;
         &::before {
             position: absolute;
             left: 0;
@@ -230,6 +233,24 @@ body {
 
         &::before {
             content: "\e900";
+        }
+    }
+    &__footer-data {
+        &::before {
+            content: "\e909";
+            color: $blue;
+        }
+    }
+
+    &__footer-bubble {
+        &::before {
+            content: "\e904";
+        }
+    }
+
+    &__footer-eye {
+        &::before {
+            content: "\e910";
         }
     }
 
