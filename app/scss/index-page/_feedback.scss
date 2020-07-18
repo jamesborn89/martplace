@@ -1,6 +1,8 @@
 .feedback {
+    overflow-x: hidden;
     text-align: center;
     padding: 120px 0;
+
     &__title {
         font-size: 36px;
         margin-bottom: 25px;
@@ -12,20 +14,22 @@
     }
 
     &__slider {
-        overflow-x: hidden;
         position: relative;
-        margin: 0 -50px;
     }
+
     .swiper-slide-prev {
         opacity: 0;
+
     }
+
     .swiper-slide-active {
         opacity: 1;
-        margin-left: 50px;
     }
+
     .swiper-slide-next {
         opacity: 1;
     }
+
     .swiper-button-prev,
     .swiper-button-next {
         outline: transparent;
@@ -36,21 +40,25 @@
         border-radius: 50%;
         box-shadow: 0 4px 15px rgba(67, 67, 67, 0.15);
         background-color: #ffffff;
+
         &::after {
             display: none;
         }
-        &:hover{
+
+        &:hover {
             color: #ffffff;
             background-color: $blue;
         }
     }
+
     .swiper-button-prev {
-        left: 25px;
+        left: -30px;
     }
 
     .swiper-button-next {
-        right: 25px;
+        right: -30px;
     }
+
     &__slider-wrapper {
         display: flex;
         width: 100%;
@@ -66,6 +74,7 @@
         box-shadow: 0 2px 50px rgba(0, 0, 0, 0.08);
         border-left: 1px solid $blue;
         position: relative;
+
         &::before {
             content: "\e904";
             font-family: "icomoon";
@@ -78,8 +87,7 @@
         }
     }
 
-    &__item-link {
-    }
+    &__item-link {}
 
     &__item-head {
         display: flex;
@@ -102,20 +110,24 @@
         display: flex;
         flex-direction: column;
     }
+
     &__item-name,
     &__item-profession {
         outline: transparent;
         text-decoration: none;
         text-align: left;
         transition: all 0.3s;
-        &:hover{
+
+        &:hover {
             color: $blue;
         }
     }
+
     &__item-name {
         font-size: 20px;
         color: #000000;
     }
+
     &__item-profession {
         color: #555;
     }
@@ -129,32 +141,4 @@
         padding: 17px 35px;
         box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     }
-    // .swiper-button-prev,
-    // .swiper-button-next{
-    //     // display: none;
-    // }
-    // .slick-arrow {
-    //     position: absolute;
-    //     top: 45%;
-    //     background-color: #ffffff;
-    //     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    //     color: $blue;
-    //     padding: 15px;
-
-    //     &:hover {
-    //         background-color: rgba($blue, 0.8);
-    //         color: #fff;
-    //     }
-
-    //     &--prev {
-    //         border-radius: 50%;
-    //         left: -25px;
-    //         z-index: 5;
-    //     }
-
-    //     &--next {
-    //         border-radius: 50%;
-    //         right: -25px;
-    //     }
-    // }
 }
