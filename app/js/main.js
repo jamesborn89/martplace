@@ -17,6 +17,27 @@ $(function () {
 
   });
 
+  // $('.feedback__slider').slick({
+  //   prevArrow: '<button class="slick-arrow slick-arrow--prev" type="button"><span class="icon-chevron-left"></button>',
+  //   nextArrow: '<button class="slick-arrow slick-arrow--next" type="button"><span class="icon-chevron-right"></button>',
+  //   slidesToShow: 2,
+  //   slidesToScroll: 2,
+  // });
+
+  var swiper = new Swiper('.feedback__slider', {
+    slideClass: 'feedback__item',
+    wrapperClass: 'feedback__slider-wrapper',
+    slidesPerView: 2,
+    slidesPerGroup: 2,
+    spaceBetween: 30,
+    
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+
+  });
+
   $(".rate-star__slider").rateYo({
     rating: 4.5,
     starWidth: "15px",

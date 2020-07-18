@@ -9,9 +9,12 @@
         margin-bottom: 50px;
         padding: 32px 30px 34px;
     }
+    .slick-list {
+        box-shadow: 0 2px 30px rgba(0, 0, 0, 0.08);
+    }
     .card-product {
         &__inner {
-            max-width: 100%;
+            max-width: 1140px;
             flex-direction: row;
             box-shadow: none;
             margin-bottom: 0;
@@ -46,7 +49,7 @@
             margin-right: 21px;
         }
 
-        .card-product__user-avatar {
+        &__user-avatar {
             margin-right: 8px;
         }
 
