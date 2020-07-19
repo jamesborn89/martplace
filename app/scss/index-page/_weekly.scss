@@ -1,0 +1,104 @@
+.weekly {
+    background-color: $gray;
+    padding: 120px 0 112px;
+
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 50px;
+        padding: 32px 30px 34px;
+    }
+
+    .card-product {
+        box-shadow: 0 2px 30px rgba(0, 0, 0, 0.08);
+
+        &__inner {
+            max-width: 1140px;
+            flex-direction: row;
+            box-shadow: none;
+            margin-bottom: 0;
+        }
+
+        &__bg {
+            width: 555px;
+            height: 100%;
+            border-radius: 4px 0 0 4px;
+        }
+
+        &__hover {
+            border-radius: 4px 0 0 4px;
+            padding-top: 203px;
+        }
+
+        &__info {
+            border-radius: 0 4px 4px 0;
+            padding: 42px 50px 24px;
+        }
+
+        &__title {
+            font-size: 24px;
+            margin-bottom: 13px;
+        }
+
+        &__link {
+            margin-bottom: 26px;
+        }
+
+        &__user {
+            margin-right: 21px;
+        }
+
+        &__user-avatar {
+            margin-right: 8px;
+        }
+
+        &__user-name {
+            color: #000000;
+            font-size: 15px;
+        }
+
+        &__text {
+            color: #555555;
+            margin-bottom: 32px;
+        }
+
+        &__tags {
+            margin-bottom: 44px;
+        }
+
+        &__tag {
+            text-decoration: none;
+            padding: 4px 17px;
+        }
+
+        &__footer {
+            display: flex;
+            padding: 25px 0 0;
+        }
+
+        &__footer-price {
+            margin-right: 19px;
+            color: #ffffff;
+            background-color: $blue;
+        }
+
+        &__footer-follower,
+        &__footer-basket {
+            padding-left: 24px;
+        }
+
+        &__footer-follower {
+            margin-right: 18px;
+        }
+
+        &__footer-basket {
+            margin-left: 0;
+        }
+
+        .rate-star__slider {
+            margin-left: auto;
+            margin-right: -7px;
+        }
+    }
+}

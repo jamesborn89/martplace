@@ -1,0 +1,36 @@
+.banner {
+    background-color: #151a20;
+    background-image: linear-gradient(to left, rgba(#0d3ef2, 0.9) 0%, rgba(#7221a0, 0.9) 100%);
+    padding: 110px 0 124px;
+    text-align: center;
+
+    &__title {
+        color: #ffffff;
+        font-size: 36px;
+        margin-bottom: 21px;
+    }
+
+    &__text {
+        color: #e7e7e7;
+        font-size: 18px;
+        font-weight: 400;
+        margin-bottom: 56px;
+    }
+
+    &__btn {
+        text-decoration: none;
+        color: $blue;
+        background-color: #ffffff;
+        font-size: 16px;
+        font-weight: 400;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        border-radius: 28px;
+        padding: 16px 43px;
+
+        &:hover {
+            border: 1px solid #fff;
+            color: #fff;
+            background-color: transparent;
+        }
+    }
+}

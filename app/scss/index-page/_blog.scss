@@ -1,0 +1,76 @@
+.blog {
+    background-color: #eff1f5;
+    padding: 120px 0 87px;
+    text-align: center;
+
+    &__title {
+        color: #000000;
+        font-size: 36px;
+        margin-bottom: 25px;
+    }
+
+    &__text {
+        max-width: 700px;
+        margin: 0 auto;
+        margin-bottom: 55px;
+    }
+
+    &__items {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .card-product {
+        text-align: left;
+
+        &__info {
+            padding: 22px 40px 25px 28px;
+        }
+
+        &__title {
+            font-size: 22px;
+            margin-bottom: 19px;
+        }
+
+        &__text {
+            margin-bottom: 0;
+        }
+
+        &__footer {
+            padding: 10px 30px 8px;
+        }
+
+        &__footer-data {
+            margin: 10px 0;
+            text-align: left;
+            max-width: 152px;
+            width: 100%;
+            padding-left: 23px;
+            color: #999999;
+            font-size: 15px;
+            font-weight: 400;
+            position: relative;
+
+            &::after {
+                content: "";
+                position: absolute;
+                width: 1px;
+                height: 40px;
+                background-color: #ececec;
+                top: -10px;
+                right: 1px;
+            }
+        }
+
+        &__footer-bubble,
+        &__footer-eye {
+            padding: 0;
+            padding-left: 23px;
+            margin-left: 30px;
+
+            &::before {
+                left: 3px;
+            }
+        }
+    }
+}
