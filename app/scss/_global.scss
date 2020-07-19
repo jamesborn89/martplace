@@ -122,7 +122,7 @@ body {
     }
 
     &__title {
-        margin-bottom: 8px;
+        margin-bottom: 11px;
         color: #000000;
         font-family: Quicksand;
         font-size: 20px;
@@ -131,7 +131,7 @@ body {
 
     &__link {
         display: flex;
-        margin-bottom: 26px;
+        margin-bottom: 24px;
     }
 
     &__user,
@@ -207,6 +207,7 @@ body {
         position: relative;
         cursor: pointer;
         outline: transparent;
+
         &::before {
             position: absolute;
             left: 0;
@@ -235,6 +236,7 @@ body {
             content: "\e900";
         }
     }
+
     &__footer-data {
         &::before {
             content: "\e909";

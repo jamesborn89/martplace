@@ -1,0 +1,225 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    font-size: 15px;
+
+    &__wrapper {
+        background-color: #262b30;
+        padding: 115px 0 113px;
+    }
+
+    &__items {
+        display: flex;
+        color: #ababab;
+    }
+
+    &__item-mart {
+        max-width: 270px;
+        width: 100%;
+        margin-right: 70px;
+    }
+
+    &__item-company {
+        max-width: 140px;
+        width: 100%;
+        margin-right: 105px;
+    }
+
+    &__item-support {
+        max-width: 150px;
+        width: 100%;
+        margin-right: 45px;
+    }
+
+    &__item-newsletter {}
+
+    &__logo {
+        margin-bottom: 34px;
+    }
+
+    &__text {
+        line-height: 28px;
+        margin-bottom: 17px;
+    }
+
+    &__link,
+    &__list-link {
+        color: inherit;
+        text-decoration: none;
+        transition: all 0.3s;
+
+        &:hover {
+            color: $blue;
+        }
+    }
+
+    &__link {
+        display: block;
+        padding-left: 29px;
+        margin-bottom: 9px;
+        position: relative;
+        line-height: 26px;
+    }
+
+    &__link-phone,
+    &__link-mail,
+    &__link-map {
+        &::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 18px;
+            height: 17px;
+            color: #ffffff;
+            font-family: "icomoon";
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 28px;
+        }
+    }
+
+    &__link-phone {
+        &::before {
+            content: "\e91a";
+        }
+    }
+
+    &__link-mail {
+        &::before {
+            content: "\e90e";
+        }
+    }
+
+    &__link-map {
+        &::before {
+            content: "\e918";
+        }
+    }
+
+    &__title {
+        color: #ffffff;
+        font-size: 18px;
+        margin-top: 10px;
+        margin-bottom: 24px;
+        letter-spacing: 1px;
+    }
+
+    &__list,
+    &__social {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    &__list-item {
+        line-height: 32px;
+    }
+
+    &__form {
+        position: relative;
+        max-width: 360px;
+        margin-top: 31px;
+        margin-bottom: 48px;
+    }
+
+    &__form-input {
+        outline: transparent;
+        border: none;
+        width: 100%;
+        height: 50px;
+        padding: 20px 120px 19px 30px;
+        border-radius: 25px;
+        background-color: #ffffff;
+
+        &:focus {
+            box-shadow: 0 2px 5px rgba(#fff, 0.5);
+        }
+    }
+
+    &__form-btn {
+        position: absolute;
+        outline: transparent;
+        right: 0;
+        top: 0;
+        padding: 16px 31px 17px;
+        border-radius: 23px;
+        background-color: #0674ec;
+        border: none;
+        color: #fff;
+
+        &:hover {
+            box-shadow: 0px 0px 10px 0px rgba(#fff, 0.5);
+        }
+    }
+
+    &__social {
+        display: flex;
+
+        &-item {}
+
+        &-link {
+            position: relative;
+            display: block;
+            width: 42px;
+            height: 42px;
+            margin-right: 13px;
+            border-radius: 50%;
+            text-decoration: none;
+            color: #fff;
+
+            &:hover {
+                box-shadow: 0px 0px 10px 0px rgba(#fff, 0.5);
+            }
+
+            &::before {
+                position: absolute;
+                top: 14px;
+                right: 14px;
+            }
+
+            &--facebook {
+                background-color: #395799;
+
+                &::before {
+                    right: 16px;
+                }
+            }
+
+            &--twitter {
+                background-color: #19b2f5;
+            }
+
+            &--google {
+                background-color: #f05b44;
+            }
+
+            &--pinterest {
+                background-color: #9c0c1c;
+            }
+
+            &--linkedin {
+                background-color: #0da6be;
+            }
+
+            &--dribbble {
+                background-color: #ea4c89;
+            }
+        }
+    }
+
+    &__bottom {
+        padding: 15px 0 20px;
+        background-color: #192027;
+        text-align: center;
+    }
+
+    &__bottom-link {
+        text-decoration: none;
+        color: #fff;
+
+        &:hover {
+            color: $blue;
+        }
+    }
+}

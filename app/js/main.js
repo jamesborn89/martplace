@@ -17,13 +17,6 @@ $(function () {
 
   });
 
-  // $('.feedback__slider').slick({
-  //   prevArrow: '<button class="slick-arrow slick-arrow--prev" type="button"><span class="icon-chevron-left"></button>',
-  //   nextArrow: '<button class="slick-arrow slick-arrow--next" type="button"><span class="icon-chevron-right"></button>',
-  //   slidesToShow: 2,
-  //   slidesToScroll: 2,
-  // });
-
   var swiper = new Swiper('.feedback__slider', {
     slideClass: 'feedback__item',
     wrapperClass: 'feedback__slider-wrapper',

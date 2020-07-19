@@ -2,6 +2,7 @@
     .container {
         overflow: hidden;
     }
+
     padding: 119px 0 121px;
     background-color: #eff1f5;
 
@@ -16,6 +17,11 @@
     .slick-list {
         margin-right: -25px;
     }
+
+    .slick-arrow {
+        background-color: $blue;
+    }
+
 
     .card-product {
         &__inner {

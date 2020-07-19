@@ -1,5 +1,5 @@
 .advantages {
-    padding: 120px 0 90px;
+    padding: 120px 0 92px;
     text-align: center;
 
     &__title {
@@ -37,10 +37,11 @@
         box-shadow: 0 2px 25px rgba(0, 0, 0, 0.08);
         border-radius: 4px;
         position: relative;
+
         &::before {
             position: absolute;
             counter-increment: section;
-            content: "0" counter(section);
+            content: "0"counter(section);
             left: 18px;
             top: 21px;
             color: #5c87f8;
@@ -87,6 +88,4 @@
         margin-bottom: 19px;
     }
 
-    &__item-text {
-    }
 }
