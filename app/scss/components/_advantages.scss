@@ -8,10 +8,10 @@
         font-weight: 400;
         line-height: 28px;
         margin-bottom: 27px;
+    }
 
-        &-blue {
-            color: $blue;
-        }
+    &__title-blue {
+        color: $blue;
     }
 
     &__text {
@@ -33,7 +33,7 @@
         list-style: none;
         padding: 50px 30px 52px;
         margin-bottom: 30px;
-        width: 361px;
+        max-width: 361px;
         box-shadow: 0 2px 25px rgba(0, 0, 0, 0.08);
         border-radius: 4px;
         position: relative;
@@ -87,5 +87,4 @@
         font-weight: 400;
         margin-bottom: 19px;
     }
-
 }

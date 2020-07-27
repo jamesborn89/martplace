@@ -26,6 +26,8 @@
         box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
         border-radius: 28px;
         padding: 16px 43px;
+        transition: all 0.3s;
+        outline: transparent;
 
         &:hover {
             border: 1px solid #fff;

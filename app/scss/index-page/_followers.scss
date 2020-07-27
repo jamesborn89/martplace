@@ -18,14 +18,18 @@
         margin-right: -25px;
     }
 
-    .slick-arrow {
+    .arrow {
         background-color: $blue;
+
+        &:hover {
+            background-color: rgba($blue, 0.8);
+        }
     }
 
 
     .card-product {
         &__inner {
-            margin-bottom: 0;
+            margin-bottom: 10px;
         }
     }
 }

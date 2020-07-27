@@ -19,7 +19,6 @@
 
     .swiper-slide-prev {
         opacity: 0;
-
     }
 
     .swiper-slide-active {
@@ -90,27 +89,6 @@
     &__item-head {
         display: flex;
         margin-bottom: 20px;
-    }
-
-    &__item-logo {
-        display: block;
-        border-radius: 50%;
-        width: 80px;
-        height: 80px;
-        margin-right: 15px;
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-position: center;
-    }
-
-    &__item-info {
-        margin-top: 9px;
-        display: flex;
-        flex-direction: column;
-    }
-
-    &__item-name,
-    &__item-profession {
         outline: transparent;
         text-decoration: none;
         text-align: left;
@@ -119,6 +97,23 @@
         &:hover {
             color: $blue;
         }
+    }
+
+    &__item-logo {
+        display: block;
+        border-radius: 50%;
+        width: 80px;
+        height: 80px;
+        margin-right: 15px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    &__item-info {
+        margin-top: 9px;
+        display: flex;
+        flex-direction: column;
     }
 
     &__item-name {
