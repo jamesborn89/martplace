@@ -122,6 +122,10 @@ body {
     font-size: 14px;
     font-weight: 400;
 
+    &:active {
+        transform: translateY(1px);
+    }
+    
     &:hover {
         background-color: rgba(#7347c1, 0.8);
     }
