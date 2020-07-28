@@ -12,7 +12,75 @@
 </head>
 
 <body>
-    @@include('./parts/_header.html')
+    <header class="header">
+    <div class="header__top">
+        <div class="container">
+            <div class="header__top-inner">
+                <a class="header__logo" href="#">
+                    <img src="images/Logo.png" alt="martplace">
+                </a>
+                <a class="header__btn" href="#">Become a Seller</a>
+                <div class="header__icons">
+                    <a class="header__icon icon-alarm" href="#">
+                        <span class="header__icon-quantity header__icon-quantity--red">25</span>
+                    </a>
+                    <a class="header__icon icon-envelope" href="#">
+                        <span class="header__icon-quantity header__icon-quantity--green">6</span>
+                    </a>
+                    <a class="header__icon icon-cart" href="#">
+                        <span class="header__icon-quantity header__icon-quantity--blue">2</span>
+                    </a>
+                </div>
+                <a class="header__profile" href="#">
+                    <img class="header__avatar avatar" src="images/avatar.png" alt="avatar">
+                    <div class="header__info">
+                        <span class="header__info-name">Taofiq Hakim</span>
+                        <span class="header__info-balans">$20.45</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="header__menu">
+        <div class="container">
+            <div class="header__inner">
+                <nav class="header__nav">
+                    <ul class="header__nav-list">
+                        <li class="header__nav-item">
+                            <a href="#" class="header__nav-link">
+                                home
+                            </a>
+                        </li>
+                        <li class="header__nav-item">
+                            <a href="#" class="header__nav-link">
+                                all products
+                            </a>
+                        </li>
+                        <li class="header__nav-item">
+                            <a href="#" class="header__nav-link">
+                                wordpress
+                            </a>
+                        </li>
+                        <li class="header__nav-item">
+                            <a href="#" class="header__nav-link">
+                                festures
+                            </a>
+                        </li>
+                        <li class="header__nav-item">
+                            <a href="#" class="header__nav-link">
+                                pages
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <form class="header__form">
+                    <input class="header__form-search" type="search" placeholder="Search product here..." required>
+                    <button class="header__form-btn icon-magnifier" type="submit"></button>
+                </form>
+            </div>
+        </div>
+    </div>
+</header>
     <main class="main">
         <section class="digital">
             <div class="container">
@@ -1163,8 +1231,104 @@
                 </div>
             </div>
         </section>
-        @@include('./parts/_banner.html')
-        @@include('./parts/_footer.html')
+        <section class="banner">
+            <div class="container">
+                <div class="banner__title">Ready to Join Our Marketplace!</div>
+                <div class="banner__text">Over 25,000 designers and developers trust the MartPlace.</div>
+                <a href="#" class="banner__btn">Join Us Today</a>
+            </div>
+        </section>
+        <footer class="footer">
+            <div class="footer__wrapper">
+                <div class="container">
+                    <div class="footer__items">
+
+                        <div class="footer__item footer__item--mart">
+                            <a class="footer__logo" href="#"><img src="images/footer-logo.png" alt="footer-logo"></a>
+                            <p class="footer__text">Nunc placerat mi id nisi interdum they mollis. Praesent pharetra,
+                                justo ut scel erisque the mattis, leo quam.</p>
+                            <address class="footer__address">
+                                <a class="footer__link footer__link--phone" href="tel:67898752235">Phone:
+                                    +6789-875-2235</a>
+                                <a class="footer__link footer__link--mail"
+                                    href="mailto:support@aazztech.com">support@aazztech.com</a>
+                                <a class="footer__link footer__link--map" href="#">202 New Hampshire Avenue
+                                    Northwest #100, New York-2573</a>
+                            </address>
+                        </div>
+
+                        <div class="footer__item footer__item--company">
+                            <div class="footer__title">Our Company</div>
+                            <ul class="footer__list">
+                                <li class="footer__list-item"><a class="footer__list-link" href="#">About Us</a></li>
+                                <li class="footer__list-item"><a class="footer__list-link" href="#">How It Work</a></li>
+                                <li class="footer__list-item"><a class="footer__list-link" href="#">Affiliates</a></li>
+                                <li class="footer__list-item"><a class="footer__list-link" href="#">Testimonials</a>
+                                </li>
+                                <li class="footer__list-item"><a class="footer__list-link" href="#">Contact Us</a></li>
+                                <li class="footer__list-item"><a class="footer__list-link" href="#">Copyright Notice</a>
+                                </li>
+                                <li class="footer__list-item"><a class="footer__list-link" href="#">Blog</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="footer__item footer__item--support">
+                            <div class="footer__title">Help Support</div>
+                            <ul class="footer__list">
+                                <li class="footer__list-item"><a class="footer__list-link" href="#">Support Forum</a>
+                                </li>
+                                <li class="footer__list-item"><a class="footer__list-link" href="#">Terms &
+                                        Conditions</a></li>
+                                <li class="footer__list-item"><a class="footer__list-link" href="#">Support Policy</a>
+                                </li>
+                                <li class="footer__list-item"><a class="footer__list-link" href="#">Refund Policy</a>
+                                </li>
+                                <li class="footer__list-item"><a class="footer__list-link" href="#">FAQs</a></li>
+                                <li class="footer__list-item"><a class="footer__list-link" href="#">Buyers Faq</a></li>
+                                <li class="footer__list-item"><a class="footer__list-link" href="#">Sellers Faq</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="footer__item footer__item--newsletter">
+                            <div class="footer__title">Newsletter</div>
+                            <p class="footer__text">Subscribe to get the latest news, update and offer information.
+                                Don't worry, we won't send spam!</p>
+                            <form class="footer__form">
+                                <input class="footer__form-input" type="email" placeholder="Enter email" required>
+                                <button class="footer__form-btn" type="submit">Submit</button>
+                            </form>
+                            <ul class="footer__social">
+                                <li class="footer__social-item"><a
+                                        class="footer__social-link footer__social-link--facebook icon-facebook"
+                                        href="#"></a></li>
+                                <li class="footer__social-item"><a
+                                        class="footer__social-link footer__social-link--twitter icon-twitter"
+                                        href="#"></a></li>
+                                <li class="footer__social-item"><a
+                                        class="footer__social-link footer__social-link--google icon-google"
+                                        href="#"></a></li>
+                                <li class="footer__social-item"><a
+                                        class="footer__social-link footer__social-link--pinterest icon-pinterest"
+                                        href="#"></a></li>
+                                <li class="footer__social-item"><a
+                                        class="footer__social-link footer__social-link--linkedin icon-linkedin"
+                                        href="#"></a></li>
+                                <li class="footer__social-item"><a
+                                        class="footer__social-link footer__social-link--dribbble icon-dribbble"
+                                        href="#"></a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <div class="container">
+                    <p class="footer__bottom-text">©2017 <a class="footer__bottom-link" href="#">MartPlace.</a> All
+                        rights reserved. Created by <a class="footer__bottom-link" href="#">AazzTech</a></p>
+                </div>
+            </div>
+        </footer>
     </main>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>

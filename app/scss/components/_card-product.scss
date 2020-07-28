@@ -6,8 +6,8 @@
         display: flex;
         box-shadow: 0 2px 4px rgba(108, 111, 115, 0.3);
         flex-direction: column;
-        max-width: 361px;
-        margin-bottom: 33px;
+        max-width: 360px;
+        margin-bottom: 30px;
     }
 
     &__img {
@@ -17,7 +17,7 @@
 
     &__bg {
         border-radius: 4px 4px 0 0;
-        width: 361px;
+        width: 360px;
         height: 230px;
         object-fit: cover;
     }

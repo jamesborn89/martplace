@@ -81,8 +81,6 @@
         }
     }
 
-
-
     &__filter-btn {
         background-color: #fff;
         border: none;
@@ -116,12 +114,17 @@
         }
     }
 
+    &__card {
+        flex-basis: calc(33.3333% - 30px);
+        margin-left: 30px;
+    }
+
     &__items {
         display: inline-flex;
         flex-wrap: wrap;
-        justify-content: space-between;
+        justify-content: flex-start;
         margin-bottom: 28px;
-        width: 100%;
+        margin-left: -30px;
     }
 
     &__all-btn {
