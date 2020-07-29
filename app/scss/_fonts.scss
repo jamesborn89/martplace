@@ -53,8 +53,17 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-reply:before {
+  content: "\e921";
+  color: #555 !important;
+}
+
 .icon-check:before {
   content: "\f00c";
+}
+
+.icon-upload:before {
+  content: "\e920";
 }
 
 .icon-check-circle:before {

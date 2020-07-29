@@ -4,9 +4,6 @@ html {
 
 html,
 body {
-    scrollbar-color: $blue #714826;
-    scrollbar-width: thin;
-
     /* полоса прокрутки (скроллбар) */
     ::-webkit-scrollbar {
         width: 5px;
