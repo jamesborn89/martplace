@@ -204,7 +204,8 @@
             .header__drop-list {
                 height: auto;
                 border-width: 1px;
-                padding: 20px;
+                opacity: 1;
+                display: block;
 
                 &::after {
                     content: "";
@@ -227,15 +228,13 @@
     &__drop-list {
         border-top: 0px solid $blue;
         list-style: none;
-        padding: 0 20px;
-        margin: 0;
-        min-width: 270px;
         box-shadow: 0 5px 40px rgba(82, 85, 90, 0.2);
         border-radius: 0 0 3px 3px;
         background-color: #ffffff;
+        opacity: 0;
         height: 0;
         overflow: hidden;
-        transition: all 0.3s;
+        transition: all 0.5s;
     }
 
     &__drop-link {
@@ -262,6 +261,42 @@
         }
     }
 
+    &__drop-avatar {
+        float: left;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin-top: 10px;
+        margin-right: 14px;
+        height: 40px;
+        width: 40px;
+    }
+
+    &__drop-btn {
+        text-decoration: none;
+        color: $blue;
+        font-size: 15px;
+        transition: all 0.3s;
+
+        &:hover {
+            text-shadow: $blue 1px 0 1px;
+        }
+    }
+
+    &__profile-box {
+        &:hover {
+            .header__profile-list {
+                padding: 20px;
+            }
+        }
+    }
+
+    &__profile-list {
+        padding: 0 20px;
+        margin: 0;
+        min-width: 270px;
+    }
+
     &__messages-drop {
         right: 6px;
     }
@@ -276,9 +311,10 @@
 
     &__messages-list {
         min-width: 370px;
+        padding: 0;
     }
 
-    &__messages-head {
+    &__drop-head {
         display: flex;
         justify-content: space-between;
         padding: 17px 24px;
@@ -287,17 +323,6 @@
     &__messages-title {
         color: #000000;
         font-size: 18px;
-    }
-
-    &__messages-link {
-        text-decoration: none;
-        color: $blue;
-        font-size: 15px;
-        transition: all 0.3s;
-
-        &:hover {
-            text-shadow: $blue 1px 0 1px;
-        }
     }
 
     &__messages-item {
@@ -310,17 +335,6 @@
         &:hover {
             background-color: rgba($blue, 0.3);
         }
-    }
-
-    &__messages-avatar {
-        float: left;
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
-        margin-top: 10px;
-        margin-right: 14px;
-        height: 40px;
-        width: 40px;
     }
 
     &__messages-inner {
@@ -344,15 +358,226 @@
     }
 
     &__messages-data {
+        color: #747a86;
         font-size: 14px;
         font-weight: 400;
         margin-left: auto;
         text-decoration: none;
+
+        &--blue {
+            color: $blue;
+        }
     }
 
     &__messages-text {
         color: #555555;
         font-family: Quicksand;
         font-size: 15px;
+    }
+
+    &__alarm-drop {
+        left: -32px;
+        right: auto;
+    }
+
+    &__alarm-box {
+        &:hover {
+            .header__alarm-list {
+                &::after {
+                    right: auto;
+                    left: 34px;
+                }
+            }
+        }
+    }
+
+    &__alarm-list {
+        min-width: 370px;
+    }
+
+    &__alarm-avatar {
+        margin-top: 2px;
+        margin-bottom: 20px;
+    }
+
+    &__alarm-item {
+        position: relative;
+        border-top: 1px solid #e8ebf0;
+        padding: 17px 75px 15px 25px;
+        font-size: 15px;
+    }
+
+    &__alarm-text {
+        color: #333333;
+        line-height: 20px;
+    }
+
+    &__alarm-name {
+        color: #333333;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    &__alarm-data {
+        margin-top: 5px;
+    }
+
+    &__alarm-icon {
+        position: absolute;
+        right: 23px;
+        top: 33px;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 32px;
+        width: 32px;
+        height: 32px;
+
+        &--blue {
+            background-color: rgba($blue, 0.1);
+
+            &::before {
+                color: $blue;
+            }
+        }
+
+        &--purpule {
+            background-color: rgba($purpule, 0.1);
+
+            &::before {
+                color: $purpule;
+            }
+        }
+
+        &--red {
+            background-color: rgba($red, 0.1);
+
+            &::before {
+                color: $red;
+            }
+        }
+
+        &--green {
+            background-color: rgba($green, 0.1);
+
+            &::before {
+                color: $green;
+            }
+        }
+    }
+
+    &__cart-drop {
+        right: 4px;
+    }
+
+    &__drop-list {
+        min-width: 400px;
+    }
+
+    &__cart-item {
+        display: flex;
+        text-decoration: none;
+        padding: 25px;
+        padding-bottom: 21px;
+        border-bottom: 1px solid #e8ebf0;
+    }
+
+    &__cart-img {
+        width: 80px;
+        height: 70px;
+        margin-right: 15px;
+    }
+
+    &__cart-info {
+        max-width: 222px;
+    }
+
+    &__cart-title {
+        color: #000000;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 18px;
+        margin-bottom: 10px;
+    }
+
+    &__cart-delet {
+        width: 32px;
+        height: 32px;
+        margin: 0 auto;
+        background-color: rgba(#7346c0, 0.1);
+        text-align: center;
+        line-height: 30px;
+        border-radius: 50%;
+        color: #818c98;
+        font-size: 15px;
+        margin-bottom: 10px;
+        transition: all 0.3s;
+
+        &:hover {
+            color: $blue;
+            background-color: rgba($blue, 0.1);
+        }
+    }
+
+    &__cart-price {
+        background-color: rgba($blue, 0.1);
+        border-radius: 15px;
+        font-size: 16px;
+        color: #0674ec;
+        font-weight: 500;
+        line-height: 30px;
+        padding: 0 12px;
+    }
+
+    &__cart-total {
+        text-align: right;
+        color: #000000;
+        font-size: 18px;
+        font-weight: 500;
+        margin-top: 17px;
+        margin-bottom: 22px;
+    }
+
+    &__cart-totalprice {
+        margin-left: 30px;
+        margin-right: 25px;
+    }
+
+    &__cart-buttons {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__cart-btn {
+        text-align: center;
+        flex: 50%;
+        display: block;
+        background-color: #000;
+        text-decoration: none;
+        color: #fefefe;
+        font-size: 15px;
+        line-height: 30px;
+        padding: 15px;
+        transition: all 0.3s;
+    }
+
+    &__cart-btn--purpule {
+        border-radius: 0 0 0 3px;
+        background-color: #7347c1;
+
+        &:hover {
+            background-color: rgba(#7347c1, 0.5);
+            color: $purpule;
+        }
+    }
+
+    &__cart-btn--blue {
+        border-radius: 0 0 3px;
+        background-color: #0674ec;
+
+        &:hover {
+            background-color: rgba(#0674ec, 0.5);
+            color: $blue;
+        }
     }
 }
